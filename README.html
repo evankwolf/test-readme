@@ -1,0 +1,19 @@
+<button id="language-toggle">切换语言</button>
+
+<div class="chinese">这是简介的中文内容。</div>
+<div class="english">This is the English content for the introduction.</div>
+
+<script>
+  const toggleButton = document.getElementById("language-toggle");
+  const chineseElements = document.querySelectorAll(".chinese");
+  const englishElements = document.querySelectorAll(".english");
+
+  toggleButton.addEventListener("click", function() {
+    chineseElements.forEach(function(element) {
+      element.style.display = element.style.display === "none" ? "block" : "none";
+    });
+    englishElements.forEach(function(element) {
+      element.style.display = element.style.display === "none" ? "block" : "none";
+    });
+  });
+</script>
